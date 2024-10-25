@@ -1,0 +1,48 @@
+[{
+  "_id": "payment1",
+  "booking_id": "booking1",
+  "amount": 850,
+  "payment_method": "credit_card",
+  "payment_date": "2023-07-01T11:00:00Z",
+  "status": "completed"
+},
+{
+  "_id": "payment2",
+  "booking_id": "booking2",
+  "amount": 1250,
+  "payment_method": "paypal",
+  "payment_date": "2022-12-15T09:30:00Z",
+  "status": "completed"
+},
+{
+  "_id": "payment3",
+  "booking_id": "booking3",
+  "amount": 400,
+  "payment_method": "credit_card",
+  "payment_date": "2023-02-20T13:00:00Z",
+  "status": "refunded"
+},
+{
+  "_id": "payment4",
+  "booking_id": "booking4",
+  "amount": 700,
+  "payment_method": "bank_transfer",
+  "payment_date": "2021-06-10T15:00:00Z",
+  "status": "completed"
+},
+{
+  "_id": "payment5",
+  "booking_id": "booking5",
+  "amount": 1100,
+  "payment_method": "credit_card",
+  "payment_date": "2022-10-12T10:30:00Z",
+  "status": "completed"
+},
+{
+  "_id": "payment6",
+  "booking_id": "booking6",
+  "amount": 550,
+  "payment_method": "paypal",
+  "payment_date": "2023-04-15T12:00:00Z",
+  "status": "pending"
+}]

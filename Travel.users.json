@@ -1,0 +1,102 @@
+[{
+  "_id": "user1",
+  "name": "Alice Johnson",
+  "email": "alice.johnson@example.com",
+  "signup_date": "2022-05-14T08:30:00Z",
+  "preferences": {
+    "preferred_airlines": [
+      "Delta",
+      "United"
+    ],
+    "preferred_hotel_stars": 4,
+    "preferred_car_types": [
+      "SUV",
+      "Sedan"
+    ]
+  },
+  "loyalty_points": 1500
+},
+{
+  "_id": "user2",
+  "name": "Bob Smith",
+  "email": "bob.smith@example.com",
+  "signup_date": "2021-11-20T10:15:00Z",
+  "preferences": {
+    "preferred_airlines": [
+      "American Airlines"
+    ],
+    "preferred_hotel_stars": 5,
+    "preferred_car_types": [
+      "Convertible",
+      "SUV"
+    ]
+  },
+  "loyalty_points": 3200
+},
+{
+  "_id": "user3",
+  "name": "Carol White",
+  "email": "carol.white@example.com",
+  "signup_date": "2023-01-10T12:45:00Z",
+  "preferences": {
+    "preferred_airlines": [
+      "Delta"
+    ],
+    "preferred_hotel_stars": 3,
+    "preferred_car_types": [
+      "Sedan"
+    ]
+  },
+  "loyalty_points": 800
+},
+{
+  "_id": "user4",
+  "name": "David Brown",
+  "email": "david.brown@example.com",
+  "signup_date": "2020-06-18T09:00:00Z",
+  "preferences": {
+    "preferred_airlines": [
+      "United"
+    ],
+    "preferred_hotel_stars": 4,
+    "preferred_car_types": [
+      "SUV",
+      "Convertible"
+    ]
+  },
+  "loyalty_points": 4500
+},
+{
+  "_id": "user5",
+  "name": "Eve Green",
+  "email": "eve.green@example.com",
+  "signup_date": "2022-02-05T14:30:00Z",
+  "preferences": {
+    "preferred_airlines": [
+      "American Airlines",
+      "Delta"
+    ],
+    "preferred_hotel_stars": 5,
+    "preferred_car_types": [
+      "Sedan"
+    ]
+  },
+  "loyalty_points": 2300
+},
+{
+  "_id": "user6",
+  "name": "Frank Black",
+  "email": "frank.black@example.com",
+  "signup_date": "2023-03-22T16:00:00Z",
+  "preferences": {
+    "preferred_airlines": [
+      "Delta",
+      "United"
+    ],
+    "preferred_hotel_stars": 3,
+    "preferred_car_types": [
+      "SUV"
+    ]
+  },
+  "loyalty_points": 600
+}]

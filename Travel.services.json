@@ -1,0 +1,36 @@
+[{
+  "_id": "service1",
+  "type": "flight",
+  "price": 500,
+  "destination": "New York"
+},
+{
+  "_id": "service2",
+  "type": "car",
+  "price": 750,
+  "destination": "Istanbul"
+},
+{
+  "_id": "service3",
+  "type": "hotel",
+  "price": 400,
+  "destination": "Marrakech"
+},
+{
+  "_id": "service4",
+  "type": "car",
+  "price": 700,
+  "destination": "France"
+},
+{
+  "_id": "service5",
+  "type": "flight",
+  "price": 550,
+  "destination": "France"
+},
+{
+  "_id": "service6",
+  "type": "hotel",
+  "price": 1000,
+  "destination": "New York"
+}]

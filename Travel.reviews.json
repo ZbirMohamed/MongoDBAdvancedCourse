@@ -1,0 +1,48 @@
+[{
+  "_id": "review1",
+  "user_id": "user1",
+  "service_id": "service1",
+  "rating": 4,
+  "comments": "Great experience, would book again.",
+  "review_date": "2023-07-05T08:30:00Z"
+},
+{
+  "_id": "review2",
+  "user_id": "user2",
+  "service_id": "service2",
+  "rating": 5,
+  "comments": "Excellent service, very satisfied.",
+  "review_date": "2022-12-20T14:00:00Z"
+},
+{
+  "_id": "review3",
+  "user_id": "user3",
+  "service_id": "service3",
+  "rating": 2,
+  "comments": "Not what I expected.",
+  "review_date": "2023-03-01T12:30:00Z"
+},
+{
+  "_id": "review4",
+  "user_id": "user4",
+  "service_id": "service1",
+  "rating": 3,
+  "comments": "Decent experience, room for improvement.",
+  "review_date": "2021-06-15T09:00:00Z"
+},
+{
+  "_id": "review5",
+  "user_id": "user5",
+  "service_id": "service4",
+  "rating": 5,
+  "comments": "Highly recommend, top-notch service!",
+  "review_date": "2022-10-20T13:15:00Z"
+},
+{
+  "_id": "review6",
+  "user_id": "user6",
+  "service_id": "service5",
+  "rating": 4,
+  "comments": "Good value for the price.",
+  "review_date": "2023-04-20T15:45:00Z"
+}]
