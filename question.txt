@@ -1,0 +1,31 @@
+10 Complex Queries for the Travel Booking Platform
+Query 1: Find the top 5 highest-spending users in 2023.
+
+Aggregate user bookings and payments to calculate total spending for each user.
+Query 2: Identify the most popular destinations for flights during the summer of 2023.
+
+Group bookings by location_to and filter by travel_date falling between June 1, 2023, and August 31, 2023.
+Query 3: Calculate the average hotel rating per city and list cities with an average rating above 4.5. --
+
+Join the ServiceProviders and Reviews collections and then calculate the average rating per city.
+Query 4: Find the user with the most loyalty points who has not made a booking in the last 6 months. --
+
+Use the Users collection to filter by last booking date and sort by loyalty_points.
+Query 5: Determine the most commonly used payment method for bookings above $1,000.
+
+Group Payments by payment method where amount > 1000 and sort by the count.
+Query 6: List the top 3 car rental companies with the highest average review ratings in the last year.
+
+Filter reviews for car rental services from the last 12 months and calculate the average rating.
+Query 7: Find users who have canceled more than 3 bookings and have a loyalty points score above 500.
+
+Use the Bookings collection to find users with multiple cancellations and filter by loyalty_points from Users.
+Query 8: Calculate the total revenue per service type (flight, hotel, car) for confirmed bookings in 2023.
+
+Aggregate bookings by service_type and filter by status and booking_date.
+Query 9: Identify the top 5 airlines that offer the most services to New York City.
+
+Join the ServiceProviders collection with the Locations collection where location_to is New York.
+Query 10: Find users who have booked both a flight and a hotel for the same trip.
+
+Identify bookings where the user_id is the same, and travel_date overlaps for a flight and hotel.
