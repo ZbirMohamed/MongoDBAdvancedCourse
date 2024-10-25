@@ -1,0 +1,167 @@
+answer of query number 1 
+[
+  {
+    $lookup: {
+      from: "payments",
+      localField: "_id",
+      foreignField: "booking_id",
+      as: "payments"
+    }
+  },
+  {
+    $unwind: "$payments"
+  },
+  {
+    $match: {
+      $expr:{
+        $and : [
+          {$lte :  [ {$dateFromString:{dateString:"$booking_date"}} , new ISODate('2023-12-31Z')] },
+          {$gte :  [ {$dateFromString:{dateString:"$booking_date"}} , new ISODate('2023-01-31Z')] },
+        ]
+      }
+    }
+  },
+  {
+    $group: {
+      _id: "$user_id",
+      total_spent: {
+        $sum: "$total_price"
+      }
+    }
+  },
+  {
+    $sort: {
+      total_spent: -1
+    }
+  },
+  {
+    $limit: 5
+  }
+]
+//answer 2
+[
+  {
+    $lookup: {
+      from: "services",
+      localField: "service_id",
+      foreignField: "_id",
+      as: "service"
+    }
+  },
+  {
+    $unwind : "$service"
+  },
+  {
+    $match: {
+      booking_date : { $regex : /^2023-(0[6-9])/}
+    }
+  },
+  {
+    $group: {
+      _id: "$service.destination",
+      popular_destination: {
+        $sum: 1
+      }
+    }
+  },
+  {
+    $sort: {
+      popular_destination: -1
+    }  
+  },
+  {
+    $limit: 1
+  }
+  
+]
+//answer 3 --> the question don't match with the data
+
+//answer 4 
+[
+  {
+    $lookup: {
+      from: "bookings",
+      localField: "_id",
+      foreignField: "user_id",
+      as: "bookings"
+    }
+  },
+  {$unwind:"$bookings"},
+  {$sort: {
+    "bookings.booking_date": -1
+  }},
+  {
+    $group: {
+      _id: "$_id",
+      name : {$first:"$name"},
+      loyalty_points : {$first:"$loyalty_points"},
+      bookings:{$first:"$bookings"}
+    }
+  },
+  
+  {
+    $addFields: {
+      dateDiffMounths:{
+        $dateDiff:{
+          startDate: {$dateFromString:{dateString:"$bookings.booking_date"}} ,
+          endDate: new Date(), // ISODate choisissez ce qui vous convient 
+          unit: "month"
+        }
+      }
+    }
+  },
+  {
+    $match: {
+      dateDiffMounths : {$gte : 6 }
+    }
+  },
+  {$sort: {
+    loyalty_points: -1
+  }},{
+    $limit: 1
+  }
+  
+]
+
+
+//
+[
+  {$match: {
+    amount : {$gt : 1000}
+  }},
+  {
+    $group: {
+      _id: "$payment_method",
+      count: {
+        $sum: 1
+      }
+    }
+  },
+  {
+    $sort: {
+      count: -1
+    }
+  },
+  {
+    $group: {
+      _id: null, // Use null to group all together
+      topPaymentMethods: {
+        $push: {
+          paymentMethod: "$_id",
+          count: "$count"
+        }
+      },
+      maxCount: { $first: "$count" } // Store the highest count
+    },
+  }, {
+    $project: {
+      topPaymentMethods: {
+        $filter: {
+          input: "$topPaymentMethods",
+          as: "method",
+          cond: { $eq: ["$$method.count", "$maxCount"] }
+        }
+      }
+    }
+  }
+]
