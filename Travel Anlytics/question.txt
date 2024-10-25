@@ -14,7 +14,7 @@ Use the Users collection to filter by last booking date and sort by loyalty_poin
 Query 5: Determine the most commonly used payment method for bookings above $1,000.
 
 Group Payments by payment method where amount > 1000 and sort by the count.
-Query 6: List the top 3 car rental companies with the highest average review ratings in the last year.
+--Query 6: List the top 3 car rental companies with the highest average review ratings in the last year.
 
 Filter reviews for car rental services from the last 12 months and calculate the average rating.
 Query 7: Find users who have canceled more than 3 bookings and have a loyalty points score above 500.

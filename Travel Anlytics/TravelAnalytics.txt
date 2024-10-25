@@ -124,44 +124,41 @@ answer of query number 1
 ]
 
 
-//
+//answer 5
 [
   {$match: {
-    amount : {$gt : 1000}
+    amount : {$gt: 1000}
+  }},
+  {$group: {
+    _id: "$payment_method",
+    count: {
+      $sum: 1
+    }
+  }},
+  {$sort: {
+    count: -1
   }},
   {
     $group: {
-      _id: "$payment_method",
-      count: {
-        $sum: 1
+      _id: null,
+      maxCount : {$first:"$count"},
+      payments: {
+        $push: {_id:"$_id",count:"$count"}
       }
     }
   },
   {
-    $sort: {
-      count: -1
-    }
-  },
-  {
-    $group: {
-      _id: null, // Use null to group all together
-      topPaymentMethods: {
-        $push: {
-          paymentMethod: "$_id",
-          count: "$count"
-        }
-      },
-      maxCount: { $first: "$count" } // Store the highest count
-    },
-  }, {
     $project: {
-      topPaymentMethods: {
-        $filter: {
-          input: "$topPaymentMethods",
-          as: "method",
-          cond: { $eq: ["$$method.count", "$maxCount"] }
-        }
+      topPayementMethods:{
+ 				$filter:{
+          input:"$payments",
+          as:"pay",
+          cond:{ $eq :["$$pay.count","$maxCount"]  }
+        }       
       }
     }
-  }
+  },
+  {$unwind: "$topPayementMethods"}
 ]
+
+//answer 6
