@@ -161,4 +161,66 @@ answer of query number 1
   {$unwind: "$topPayementMethods"}
 ]
 
-//answer 6
+//answer 6 -- question error
+
+
+//answer 7
+[
+  {
+    $lookup: {
+      from: "users",
+      localField: "user_id",
+      foreignField: "_id",
+      as: "user"
+    }
+  },
+  {
+    $unwind:"$user"
+  },
+  {
+    $match: {
+      "user.loyalty_points" : {$gt : 500},
+      status:{$regex : "cancelled" , $options : "i"}
+    }
+  },
+  {
+    $group: {
+      _id: "user_id",
+      bookingCancelled: {
+        $sum: 1
+      }
+    }
+  },
+  {
+    $match: {
+      bookingCancelled : {$gt : 3}
+    }
+  }
+]
+
+//answer 8
+[
+  {
+    $lookup: {
+      from: "services",
+      localField: "service_id",
+      foreignField: "_id",
+      as: "service"
+    }
+  },
+  {$unwind:"$service"},
+  {
+    $match: {
+      status :  "confirmed" ,
+      booking_date : { $regex : /2023/  }
+    }
+  },
+  {
+    $group: {
+      _id: "$service.type",
+      totalRevenue: {
+          $sum: { $ifNull: ["$total_price", 0] }
+      }
+    }
+  }
+]

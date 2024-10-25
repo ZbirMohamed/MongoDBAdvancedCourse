@@ -1,31 +1,27 @@
-10 Complex Queries for the Travel Booking Platform
-Query 1: Find the top 5 highest-spending users in 2023.
+Voici la traduction des questions en français :
 
-Aggregate user bookings and payments to calculate total spending for each user.
-Query 2: Identify the most popular destinations for flights during the summer of 2023.
+1. Requête 1 : Trouver les 5 utilisateurs ayant dépensé le plus en 2023.
 
-Group bookings by location_to and filter by travel_date falling between June 1, 2023, and August 31, 2023.
-Query 3: Calculate the average hotel rating per city and list cities with an average rating above 4.5. --
+   Agréger les réservations et les paiements des utilisateurs pour calculer les dépenses totales de chaque utilisateur.
 
-Join the ServiceProviders and Reviews collections and then calculate the average rating per city.
-Query 4: Find the user with the most loyalty points who has not made a booking in the last 6 months. --
+2. Requête 2 : Identifier les destinations les plus populaires pour les vols durant l'été 2023.
 
-Use the Users collection to filter by last booking date and sort by loyalty_points.
-Query 5: Determine the most commonly used payment method for bookings above $1,000.
+   Regrouper les réservations par `location_to` et filtrer par la date de voyage comprise entre le 1er juin 2023 et le 31 août 2023.
 
-Group Payments by payment method where amount > 1000 and sort by the count.
---Query 6: List the top 3 car rental companies with the highest average review ratings in the last year.
+3. Requête 3 : Trouver l'utilisateur ayant le plus de points de fidélité qui n'a pas effectué de réservation au cours des 6 derniers mois.
 
-Filter reviews for car rental services from the last 12 months and calculate the average rating.
-Query 7: Find users who have canceled more than 3 bookings and have a loyalty points score above 500.
+   Utiliser la collection `Users` pour filtrer par la date de la dernière réservation et trier par `loyalty_points`.
 
-Use the Bookings collection to find users with multiple cancellations and filter by loyalty_points from Users.
-Query 8: Calculate the total revenue per service type (flight, hotel, car) for confirmed bookings in 2023.
+4. Requête 4 : Déterminer le mode de paiement le plus utilisé pour les réservations supérieures à 1 000 $.
 
-Aggregate bookings by service_type and filter by status and booking_date.
-Query 9: Identify the top 5 airlines that offer the most services to New York City.
+   Regrouper les paiements par méthode de paiement où le montant est supérieur à 1 000 $ et trier par le nombre d'occurrences.
 
-Join the ServiceProviders collection with the Locations collection where location_to is New York.
-Query 10: Find users who have booked both a flight and a hotel for the same trip.
+5. Requête 5 : Trouver les utilisateurs qui ont annulé plus de 3 réservations et qui ont un score de points de fidélité supérieur à 500.
 
-Identify bookings where the user_id is the same, and travel_date overlaps for a flight and hotel.
+   Utiliser la collection `Bookings` pour trouver les utilisateurs avec plusieurs annulations et filtrer par les `loyalty_points` de la collection `Users`.
+
+6. Requête 6 : Calculer le revenu total par type de service (vol, hôtel, voiture) pour les réservations confirmées en 2023.
+
+   Agréger les réservations par type de service et filtrer par le statut et la date de réservation. 
+
+Ces questions permettent de pratiquer des requêtes complexes sur la plateforme de réservation de voyages.
