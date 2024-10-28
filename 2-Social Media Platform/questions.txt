@@ -1,0 +1,46 @@
+1-Building the Newsfeed: Use aggregation pipelines to fetch posts from users that a given user is following, sorting by the most recent posts.
+2-Fetching User Details with Aggregated Data: Get user information along with the total number of posts, followers, and likes.
+3-Comment Hierarchy: Use $graphLookup to retrieve nested replies for a specific comment.
+4-Trending Hashtags: Aggregate and find the most frequently used hashtags across all posts.
+5-Real-Time Notifications Using Change Streams: Set up change streams to trigger real-time notifications for actions like new followers, comments, and likes.
+Sure! Here are some advanced MongoDB questions and challenges that will help you deepen your understanding of the database and its capabilities. These questions cover a range of topics including aggregation, indexing, geospatial queries, and data manipulation.
+
+### Advanced MongoDB Questions
+
+1. **Complex Aggregation Challenge**
+   - Write an aggregation query to find the top 5 users who have the highest number of posts and the total number of comments on those posts. Return the user's username, the number of posts, and the total number of comments.
+
+2. **Lookup with Multiple Conditions**
+   - Using the `$lookup` stage, create a query that retrieves posts along with the comments, but only include comments made in the last 30 days. Include the post's content and the comment's content.
+
+3. **Data Transformation and Projection**
+   - Write an aggregation query to transform the `Posts` collection to include an additional field `likeStatus`, which indicates whether the logged-in user (provided as input) has liked the post (true/false).
+
+4. **Pagination with Aggregation**
+   - Create a paginated response for fetching posts that includes comments, where the pagination is based on the number of posts per page (e.g., 10 posts per page). Include parameters for `pageNumber` and `pageSize`.
+
+5. **Geospatial Query for Nearby Posts**
+   - Write a query to find all posts within a certain radius (e.g., 10 km) of a given user's location. Assume that the user’s location is provided as latitude and longitude.
+
+6. **Text Search with Scoring**
+   - Implement a full-text search on the `Posts` collection and return the posts that match a specific search term, ordered by relevance (score). Include the score in the result.
+
+7. **Data Cleanup with Aggregation**
+   - Suppose you have duplicate posts in your `Posts` collection based on content. Write an aggregation query to identify duplicate posts (same content) and return the IDs of duplicates for potential deletion.
+
+8. **Array Updates**
+   - Write a query to update the `likes` array in the `Posts` collection. If a user likes a post, add their ID to the array; if they un-like it, remove their ID from the array. Make sure to handle cases where the user might already exist in the likes array.
+
+9. **Event Tracking with Change Streams**
+   - Set up a change stream to monitor changes in the `Posts` collection. Write a function that listens for any new posts being added and logs the username of the user who created the post.
+
+10. **Nested Data Manipulation**
+    - Given that comments can also have replies, implement a data structure where comments can have nested replies. Write queries to insert a new reply to a comment, retrieve a post with all its comments and their replies, and delete a specific reply.
+
+### How to Approach These Questions
+- Break down each question into smaller tasks to make it easier to tackle.
+- Test your queries in your MongoDB shell or your preferred MongoDB client.
+- Consider performance implications, such as indexing where appropriate.
+- Use MongoDB’s documentation for reference on specific operators and stages.
+
+Feel free to pick any of these questions to work on, and let me know if you need guidance or hints on how to approach them!
