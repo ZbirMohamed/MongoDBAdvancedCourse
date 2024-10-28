@@ -33,3 +33,27 @@ db.posts.insertOne({
   "created_at": ISODate("2024-10-28T09:00:00Z")
 }
 )
+//comments
+db.comments.insertOne({
+  "_id": "com1",
+  "post_id": "post1",  // Reference to the Posts collection
+  "user_id": "user2",  // Reference to the Users collection
+  "content": "Wow, that looks amazing!",
+  //"parent_comment_id": ObjectId("..."),  // Reference to another comment if it's a reply
+  "created_at": ISODate("2024-10-28T09:05:00Z")
+}
+)
+//followers
+
+
+
+
+//notifications
+db.notifications.insertOne({
+  "_id": "notif1",
+  "user_id": "user1",  // Reference to the Users collection
+  "type": "like",  // e.g., like, comment, follow
+  "message": "John Doe liked your post.",
+  "read": false,
+  "created_at": ISODate("2024-10-28T09:30:00Z")
+})
