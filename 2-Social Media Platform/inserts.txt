@@ -1,0 +1,35 @@
+//users
+db.users.insertOne({
+  "_id": "user1",
+  "username": "john_doe",
+  "email": "john.doe@example.com",
+  "bio": "Software engineer and tech enthusiast.",
+  "location": "San Francisco, CA",
+  "profile_picture": "path/to/profile.jpg",
+  "settings": {
+    "is_private": false,
+    "notifications_enabled": true
+  },
+  "followers_count": 100,
+  "following_count": 150,
+  "created_at": ISODate("2024-10-28T08:00:00Z"),
+  "last_active": ISODate("2024-10-28T10:00:00Z")
+})
+
+//posts
+db.posts.insertOne({
+  "_id": "post1",
+  "user_id": "user1",  // Reference to the Users collection
+  "content": "Check out this amazing sunset!",
+  "media": [
+    {
+      "type": "image",
+      "url": "path/to/sunset.jpg"
+    }
+  ],
+  "tags": ["sunset", "nature", "photography"],
+  "likes_count": 50,
+  "comments_count": 20,
+  "created_at": ISODate("2024-10-28T09:00:00Z")
+}
+)
