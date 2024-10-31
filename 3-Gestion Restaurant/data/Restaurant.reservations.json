@@ -1,0 +1,320 @@
+[{
+  "_id": 1,
+  "clientId": 1,
+  "tableId": 1,
+  "reservationDate": "2024-10-01T19:00:00Z",
+  "guestCount": 2,
+  "status": "confirmed"
+},
+{
+  "_id": 2,
+  "clientId": 2,
+  "tableId": 2,
+  "reservationDate": "2024-10-01T20:00:00Z",
+  "guestCount": 4,
+  "status": "completed"
+},
+{
+  "_id": 3,
+  "clientId": 3,
+  "tableId": 3,
+  "reservationDate": "2024-10-02T18:30:00Z",
+  "guestCount": 6,
+  "status": "confirmed"
+},
+{
+  "_id": 4,
+  "clientId": 4,
+  "tableId": 4,
+  "reservationDate": "2024-10-02T19:45:00Z",
+  "guestCount": 2,
+  "status": "canceled"
+},
+{
+  "_id": 5,
+  "clientId": 5,
+  "tableId": 5,
+  "reservationDate": "2024-10-03T20:15:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 6,
+  "clientId": 6,
+  "tableId": 6,
+  "reservationDate": "2024-10-03T18:00:00Z",
+  "guestCount": 6,
+  "status": "completed"
+},
+{
+  "_id": 7,
+  "clientId": 1,
+  "tableId": 7,
+  "reservationDate": "2024-10-04T19:30:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 8,
+  "clientId": 2,
+  "tableId": 1,
+  "reservationDate": "2024-10-05T17:00:00Z",
+  "guestCount": 2,
+  "status": "canceled"
+},
+{
+  "_id": 9,
+  "clientId": 3,
+  "tableId": 2,
+  "reservationDate": "2024-10-06T19:00:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 10,
+  "clientId": 4,
+  "tableId": 3,
+  "reservationDate": "2024-10-07T20:30:00Z",
+  "guestCount": 6,
+  "status": "confirmed"
+},
+{
+  "_id": 11,
+  "clientId": 5,
+  "tableId": 4,
+  "reservationDate": "2024-10-08T18:45:00Z",
+  "guestCount": 2,
+  "status": "completed"
+},
+{
+  "_id": 12,
+  "clientId": 6,
+  "tableId": 5,
+  "reservationDate": "2024-10-09T19:00:00Z",
+  "guestCount": 4,
+  "status": "canceled"
+},
+{
+  "_id": 13,
+  "clientId": 1,
+  "tableId": 6,
+  "reservationDate": "2024-10-10T18:30:00Z",
+  "guestCount": 6,
+  "status": "confirmed"
+},
+{
+  "_id": 14,
+  "clientId": 2,
+  "tableId": 7,
+  "reservationDate": "2024-10-11T19:45:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 15,
+  "clientId": 3,
+  "tableId": 1,
+  "reservationDate": "2024-10-12T20:15:00Z",
+  "guestCount": 2,
+  "status": "completed"
+},
+{
+  "_id": 16,
+  "clientId": 4,
+  "tableId": 2,
+  "reservationDate": "2024-10-13T19:00:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 17,
+  "clientId": 5,
+  "tableId": 3,
+  "reservationDate": "2024-10-14T20:30:00Z",
+  "guestCount": 6,
+  "status": "canceled"
+},
+{
+  "_id": 19,
+  "clientId": 1,
+  "tableId": 5,
+  "reservationDate": "2024-10-16T19:30:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 21,
+  "clientId": 3,
+  "tableId": 7,
+  "reservationDate": "2024-10-18T20:00:00Z",
+  "guestCount": 4,
+  "status": "completed"
+},
+{
+  "_id": 22,
+  "clientId": 4,
+  "tableId": 1,
+  "reservationDate": "2024-10-19T17:30:00Z",
+  "guestCount": 2,
+  "status": "confirmed"
+},
+{
+  "_id": 23,
+  "clientId": 5,
+  "tableId": 2,
+  "reservationDate": "2024-10-20T19:00:00Z",
+  "guestCount": 4,
+  "status": "completed"
+},
+{
+  "_id": 25,
+  "clientId": 1,
+  "tableId": 4,
+  "reservationDate": "2024-10-22T18:45:00Z",
+  "guestCount": 2,
+  "status": "canceled"
+},
+{
+  "_id": 26,
+  "clientId": 2,
+  "tableId": 5,
+  "reservationDate": "2024-10-23T19:30:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 27,
+  "clientId": 3,
+  "tableId": 6,
+  "reservationDate": "2024-10-24T19:00:00Z",
+  "guestCount": 6,
+  "status": "completed"
+},
+{
+  "_id": 29,
+  "clientId": 5,
+  "tableId": 1,
+  "reservationDate": "2024-10-26T18:00:00Z",
+  "guestCount": 2,
+  "status": "canceled"
+},
+{
+  "_id": 30,
+  "clientId": 6,
+  "tableId": 2,
+  "reservationDate": "2024-10-27T19:15:00Z",
+  "guestCount": 4,
+  "status": "completed"
+},
+{
+  "_id": 31,
+  "clientId": 1,
+  "tableId": 3,
+  "reservationDate": "2024-10-28T20:00:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 32,
+  "clientId": 1,
+  "tableId": 2,
+  "reservationDate": "2024-10-29T18:30:00Z",
+  "guestCount": 2,
+  "status": "canceled"
+},
+{
+  "_id": 34,
+  "clientId": 2,
+  "tableId": 6,
+  "reservationDate": "2024-10-31T20:30:00Z",
+  "guestCount": 6,
+  "status": "confirmed"
+},
+{
+  "_id": 35,
+  "clientId": 3,
+  "tableId": 5,
+  "reservationDate": "2024-11-01T18:00:00Z",
+  "guestCount": 2,
+  "status": "completed"
+},
+{
+  "_id": 36,
+  "clientId": 3,
+  "tableId": 1,
+  "reservationDate": "2024-11-02T19:45:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 37,
+  "clientId": 4,
+  "tableId": 7,
+  "reservationDate": "2024-11-03T20:15:00Z",
+  "guestCount": 6,
+  "status": "canceled"
+},
+{
+  "_id": 38,
+  "clientId": 5,
+  "tableId": 3,
+  "reservationDate": "2024-11-04T17:30:00Z",
+  "guestCount": 2,
+  "status": "confirmed"
+},
+{
+  "_id": 39,
+  "clientId": 6,
+  "tableId": 4,
+  "reservationDate": "2024-11-05T19:00:00Z",
+  "guestCount": 4,
+  "status": "completed"
+},
+{
+  "_id": 40,
+  "clientId": 1,
+  "tableId": 2,
+  "reservationDate": "2024-11-06T19:30:00Z",
+  "guestCount": 4,
+  "status": "canceled"
+},
+{
+  "_id": 41,
+  "clientId": 5,
+  "tableId": 1,
+  "reservationDate": "2024-11-07T18:30:00Z",
+  "guestCount": 2,
+  "status": "completed"
+},
+{
+  "_id": 42,
+  "clientId": 6,
+  "tableId": 3,
+  "reservationDate": "2024-11-08T19:15:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 43,
+  "clientId": 4,
+  "tableId": 5,
+  "reservationDate": "2024-11-09T20:00:00Z",
+  "guestCount": 6,
+  "status": "completed"
+},
+{
+  "_id": 44,
+  "clientId": 2,
+  "tableId": 7,
+  "reservationDate": "2024-11-10T19:00:00Z",
+  "guestCount": 4,
+  "status": "confirmed"
+},
+{
+  "_id": 45,
+  "clientId": 3,
+  "tableId": 6,
+  "reservationDate": "2024-11-11T18:45:00Z",
+  "guestCount": 2,
+  "status": "canceled"
+}]

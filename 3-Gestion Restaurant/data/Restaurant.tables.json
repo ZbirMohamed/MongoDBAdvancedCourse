@@ -1,0 +1,49 @@
+[{
+  "_id": 1,
+  "tableNumber": 5,
+  "capacity": 2,
+  "location": "window",
+  "available": true
+},
+{
+  "_id": 2,
+  "tableNumber": 12,
+  "capacity": 4,
+  "location": "center",
+  "available": true
+},
+{
+  "_id": 3,
+  "tableNumber": 7,
+  "capacity": 6,
+  "location": "patio",
+  "available": true
+},
+{
+  "_id": 4,
+  "tableNumber": 3,
+  "capacity": 2,
+  "location": "corner",
+  "available": false
+},
+{
+  "_id": 5,
+  "tableNumber": 8,
+  "capacity": 4,
+  "location": "center",
+  "available": true
+},
+{
+  "_id": 6,
+  "tableNumber": 10,
+  "capacity": 6,
+  "location": "window",
+  "available": false
+},
+{
+  "_id": 7,
+  "tableNumber": 15,
+  "capacity": 4,
+  "location": "patio",
+  "available": true
+}]

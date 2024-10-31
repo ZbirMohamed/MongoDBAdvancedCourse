@@ -1,0 +1,38 @@
+//q1
+[
+  {
+    $group: {
+      _id: "$clientId",
+       totalReservation: {
+        $sum: 1
+      },
+      tables : {$push : "$tableId"}
+    }
+  }
+  ,{
+    $unwind:"$tables"
+  },
+  {
+    $group: {
+      _id: {
+			userId : "$_id", tableId: "$tables"
+	} ,
+      tableCount: {
+        $sum: 1
+      },
+      totalReservation:{$first : "$totalReservation"}
+    }
+  },
+  {
+    $sort: {
+      tableCount: -1
+    }
+  } , {
+    $group: {
+      _id: "$_id.userId",
+      favoriteTable: { $first: "$_id.tableId" }, 
+      maxReservations: { $first: "$tableCount" }, 
+      totalReservations: { $first: "$totalReservation" } 
+    }
+  }
+]
