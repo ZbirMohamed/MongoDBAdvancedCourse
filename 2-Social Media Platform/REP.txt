@@ -85,3 +85,149 @@ question 2:
   
 ]
 3-
+[
+  {$addFields:
+    {
+    likeStatus: 
+    	{$cond :{
+        if:{
+          $in : ["user1","$likes"] // deposer le user suppose connecter
+        },
+        then:true,
+        else:false }
+      }
+  	}
+  },
+  {
+    $project: {
+      likeStatus : 1,
+      content:1,
+      created_at:1
+    }
+  }
+
+]
+
+
+question 4 -  (utiliser mongosh)
+let pageSize = 3 ;// nombre de commentaire voulue
+let pageNumber = 2; // la page voulue
+
+let skipNumber = (pageNumber - 1) * pageSize; // calcule des elements a depasse
+
+[
+  {
+			$match : 
+			{
+				$expr:
+				{
+						$gt:['$comments',0]
+				}				
+			}
+	},
+{$skip : pageNumber},
+{
+	$limit:pageSize
+}
+]
+
+//question 5 
+//!!Attention mongoDB ne peut avoir qu'UN SEUL index de type text MAIS il vous permet de COMBINER les champs de type TEXT.
+db.posts.createIndex({ title: "text", content: "text" });
+//CECI va combiner l'index de recheche pour titre et contenu 
+//ci vous chercher alors vous aurez des resultats pour les deux et puis vous pouvez filtrer les données non voulues
+
+[
+  {
+    $match: {
+      $text:{
+        $search : "Amazing"
+      }
+    }
+  },
+  {
+    $addFields: {
+      score: {$meta: "textScore"   }
+    }
+  }
+  ,
+  {
+    $sort: {
+      score: -1
+    }
+  }
+]
+//ceci va vous permettre de cree des recherche comme celle que vous avez sur insta par exemple 
+//MAIS SACHAIT BIEN QUE SEARCH A BESOIN PLUS DE PERFORMANCE QU'UNE SIMPLE MATCH 
+
+//Question 6
+//j'ai utiliser le reduce pour rassembler les id en une seul chaine 
+[
+  {
+    $group: {
+      _id: "$content",
+      duplicate: {
+        $sum: 1
+      },
+      postId:{$push: "$_id" }
+    }
+  },
+  {
+		$project: {
+		  joinedIds : {
+        $reduce:{
+          input : "$postId",
+          initialValue:"",
+          in:{
+            $cond:{
+              if:{$eq:["$$value",'']},
+              then:"$$this",
+              else:{$concat: ["$$value", ", ", "$$this"]}
+            }
+          }
+        }
+      }
+		}    
+  }
+]
+//question 7
+
+//visualiser la requete dans l'aggregation pipelines pour savoir si le changements pass sont aucun soucis
+//apres traduiser vos requete on updateSimple
+
+// agg
+[
+  {
+    $match: { "_id": "post2" }
+  },
+  {
+    $set: {
+      likes: {
+        $cond: {
+          if: { $in: ["user2", "$likes"] },
+          then: { $setDifference: ["$likes", ["user2"]] },
+          else: { $concatArrays: ["$likes", ["user2"]] }
+        }
+      }
+    }
+  }
+]
+// update
+db.posts.updateOne(
+  { _id: "post2" },
+  [
+    {
+      $set: {
+        likes: {
+          $cond: {
+            if: { $in: ["user2", "$likes"] },
+            then: { $setDifference: ["$likes", ["user2"]] },
+            else: { $concatArrays: ["$likes", ["user2"]] }
+          }
+        }
+      }
+    }
+  ]
+);
+
+//question 8
