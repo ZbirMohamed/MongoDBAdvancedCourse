@@ -1,4 +1,4 @@
-//q1
+//q1 
 [
   {
     $group: {
@@ -34,5 +34,116 @@
       maxReservations: { $first: "$tableCount" }, 
       totalReservations: { $first: "$totalReservation" } 
     }
+  },{
+    $lookup: {
+      from: "clients",
+      localField: "_id",
+      foreignField: "_id",
+      as: "client"
+    }
+  },{
+    $project: {
+      _id:0,
+      client : {$arrayElemAt :["$client.name",0] },
+      favoriteTable:1,
+      nbrReservTable:"$maxReservations", //nbrReservation de la table par le client
+      totalReservations:1 //nbr total de toutes les reservation emis par ce client
+    }
   }
 ]
+// q2  taux de reservation de chaque table
+[
+	{
+	  $match: {
+	    status : "completed"
+	  }
+	},
+  {$group: {
+    _id: "$tableId",
+    nombreReservation: {
+      $sum: 1
+    }
+  }
+  },
+  {
+    $group: {
+      _id: null,
+      nbrTotalRes : {$sum : "$nombreReservation"},
+      tables: {
+        $push:  "$$ROOT"
+      }
+    }
+  },
+  {
+    $unwind:"$tables"
+  },
+  {
+    $project: {
+      tableId : "$tables._id",
+      nombreReservation : "$tables.nombreReservation",
+      nbrTotalRes : 1,
+      _id:0,
+      pourcentage : {
+        $multiply : [{$divide : ["$tables.nombreReservation","$nbrTotalRes"]} , 100]
+      }
+    }
+  },{
+    $sort: {
+      pourcentage: -1,
+    }
+  }
+]
+//q3
+//la moyen de reservation par semaine du mois 10 2024
+[
+  {
+    $match: {
+      reservationDate : {$gte : "2024-10-01T19:00:00Z" ,$lte :"2024-10-31T20:30:00Z"       }
+    }
+  },
+  {
+    $addFields: {
+    semain: {
+      $isoWeek:{$toDate : "$reservationDate"  }  
+    },
+    annee : {$year : {$toDate : "$reservationDate"  }   }
+  }
+  },
+  {
+   	$group: {
+   	  _id: "$semain",
+   	  nbrReservSem: {
+   	    $sum: 1
+   	  }
+   	} 
+  },
+  {
+    $group: {
+      _id: null,
+      reservSem : {$push : "$$ROOT"},
+      totalReserv: {
+        $sum: "$nbrReservSem"
+      }
+    }
+  },
+  {
+  	$unwind : "$reservSem"
+  },
+  {
+$project: {
+  _id : 0,
+  tauxReservation : {
+    $multiply :[ {$divide :  ["$reservSem.nbrReservSem" ,"$totalReserv" ]   }   , 100 ]
+  },
+  totalReserv : 1,
+  semain : "$reservSem._id",
+  resevSemain :"$reservSem.nbrReservSem"
+}},{
+    $sort: {
+      semain: 1
+    }
+}
+]
+
+//question 4 question final repo xD
+//ajouter au client qui ont depaser les 3 reserervation ce mois ci 10 poits de fidelites (reserva completed)
