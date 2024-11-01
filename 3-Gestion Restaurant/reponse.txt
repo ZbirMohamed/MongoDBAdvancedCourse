@@ -98,7 +98,7 @@
 [
   {
     $match: {
-      reservationDate : {$gte : "2024-10-01T19:00:00Z" ,$lte :"2024-10-31T20:30:00Z"       }
+      reservationDate : {$gte : "2024-10-01T19:00:00Z" ,$lte :"2024-10-31T20:30:00Z"}
     }
   },
   {
@@ -146,4 +146,44 @@ $project: {
 ]
 
 //question 4 question final repo xD
-//ajouter au client qui ont depaser les 3 reserervation ce mois ci 10 poits de fidelites (reserva completed)
+//ajouter au client qui ont  2 reserervation ou plus ce mois (mois 10 2024)  10 ponits de fidelites (reservation :  completed)
+const clietnIds = db.reservations.aggregate(
+[
+  {$match: {
+    reservationDate: {$gte : "2024-10-01T19:00:00Z" ,$lte :"2024-10-31T20:30:00Z"},
+    status:"completed"
+  }
+  },
+  {$group: {
+    _id: "$clientId",
+    nbrReservation: {
+      $sum: 1
+    }
+  }
+  },
+  {
+    $match: {
+      nbrReservation : {$gte : 2}
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      listClientFidel: {
+        $push: "$_id"
+      }
+    }
+  },{
+    $project: {
+      _id:0
+    }
+  }
+]
+);
+
+// update on utilisant la liste
+
+db.clients.updateMany(
+  { _id: { $in: clientIdsArray } },
+  { $inc: {loyaltyPoints : 10 } }  
+);
