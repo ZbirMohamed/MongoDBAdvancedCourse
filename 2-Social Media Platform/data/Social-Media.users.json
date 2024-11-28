@@ -1,0 +1,120 @@
+[{
+  "_id": "user1",
+  "username": "john_doe",
+  "email": "john.doe@example.com",
+  "bio": "Software engineer and tech enthusiast.",
+  "location": "San Francisco, CA",
+  "profile_picture": "path/to/profile.jpg",
+  "settings": {
+    "is_private": false,
+    "notifications_enabled": true
+  },
+  "followers_count": 100,
+  "following_count": 150,
+  "created_at": {
+    "$date": "2024-10-28T08:00:00.000Z"
+  },
+  "last_active": {
+    "$date": "2024-10-28T10:00:00.000Z"
+  }
+},
+{
+  "_id": "user2",
+  "username": "Harry Potter",
+  "email": "HP@wizard.com",
+  "bio": "Wizard engineer and magic enthusiast.",
+  "location": "London , Uk",
+  "profile_picture": "path/to/profile.jpg",
+  "settings": {
+    "is_private": true,
+    "notifications_enabled": true
+  },
+  "followers_count": 100,
+  "following_count": 150,
+  "created_at": {
+    "$date": "2014-10-02T08:00:00.000Z"
+  },
+  "last_active": {
+    "$date": "2024-10-15T10:00:00.000Z"
+  }
+},
+{
+  "_id": "user3",
+  "username": "ALBUS Dumbeldor",
+  "email": "ALDum@wizard.com",
+  "bio": "Headmaster of the wizarding school Hogwarts.",
+  "location": "London , Uk",
+  "profile_picture": "path/to/profile.jpg",
+  "settings": {
+    "is_private": true,
+    "notifications_enabled": true
+  },
+  "followers_count": 10000,
+  "following_count": 98,
+  "created_at": {
+    "$date": "2000-10-02T08:00:00.000Z"
+  },
+  "last_active": {
+    "$date": "2024-10-18T10:00:00.000Z"
+  }
+},
+{
+  "_id": "user4",
+  "username": "SEVERUS Rogue",
+  "email": "SvRo@wizard.com",
+  "bio": "Professor at the wizarding school Hogwarts.",
+  "location": "London , Uk",
+  "profile_picture": "path/to/profile.jpg",
+  "settings": {
+    "is_private": true,
+    "notifications_enabled": true
+  },
+  "followers_count": 5000,
+  "following_count": 98,
+  "created_at": {
+    "$date": "2004-10-02T08:00:00.000Z"
+  },
+  "last_active": {
+    "$date": "2024-10-18T10:00:00.000Z"
+  }
+},
+{
+  "_id": "user5",
+  "username": "VOLDMORT",
+  "email": "LVM@wizard.com",
+  "bio": "The one whos name shall not be spoken.",
+  "location": "London , Uk",
+  "profile_picture": "path/to/profile.jpg",
+  "settings": {
+    "is_private": true,
+    "notifications_enabled": true
+  },
+  "followers_count": 9000,
+  "following_count": 98,
+  "created_at": {
+    "$date": "2004-10-02T08:00:00.000Z"
+  },
+  "last_active": {
+    "$date": "2024-10-18T10:00:00.000Z"
+  }
+},
+{
+  "_id": "user6",
+  "username": "Dobby the elf",
+  "email": "DbELF@wizard.com",
+  "bio": "The one who seeks freedom.",
+  "location": "London , Uk",
+  "profile_picture": "path/to/profile.jpg",
+  "settings": {
+    "is_private": true,
+    "notifications_enabled": true
+  },
+  "followers_count": 1,
+  "following_count": 1,
+  "created_at": {
+    "$date": "2004-10-02T08:00:00.000Z"
+  },
+  "last_active": {
+    "$date": "2024-10-18T10:00:00.000Z"
+  }
+}]

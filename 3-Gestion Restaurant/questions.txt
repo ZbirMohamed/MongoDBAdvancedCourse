@@ -1,0 +1,23 @@
+1- Identifier la table préférée d’un client
+   Rédigez une requête d'agrégation pour déterminer la table préférée de chaque client (celle où il a fait le plus de réservations). La requête doit également inclure :
+        -Le nom du client.
+        -Le nombre de réservations effectuées pour la table préférée.
+        -Le nombre total de toutes les réservations effectuées par ce client.
+
+2 - Calculer le taux de réservation pour chaque table
+    Écrivez une requête d'agrégation pour calculer le pourcentage de réservations complétées pour chaque table par rapport au total des réservations complétées. La requête doit afficher :
+        -L'identifiant de la table.
+        -Le nombre de réservations pour cette table.
+        -Le pourcentage de réservation de cette table par rapport au total.
+
+
+3 - Moyenne des réservations hebdomadaires pour un mois donné**
+    Écrivez une requête d'agrégation pour calculer la moyenne des réservations hebdomadaires pour le mois d'octobre 2024. La requête doit afficher :
+        -Le numéro de la semaine.
+        -Le nombre de réservations effectuées pour cette semaine.
+        -Le pourcentage de réservations hebdomadaires par rapport au total des réservations du mois.
+
+4. Ajouter des points de fidélité pour les clients fidèles**
+    Rédigez une requête pour attribuer 10 points de fidélité supplémentaires aux clients qui ont effectué 2 réservations ou plus en octobre 2024, uniquement pour les réservations marquées comme "complétées". La solution doit inclure deux étapes :
+        -Identifier les clients éligibles.
+        -Mettre à jour leurs points de fidélité dans la collection `clients`.

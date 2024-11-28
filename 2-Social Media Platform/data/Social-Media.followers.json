@@ -1,0 +1,80 @@
+[{
+  "_id": "f1",
+  "follower_id": "user1",
+  "followed_id": "user2",
+  "created_at": {
+    "$date": "2023-10-18T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f2",
+  "follower_id": "user2",
+  "followed_id": "user3",
+  "created_at": {
+    "$date": "2022-10-12T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f3",
+  "follower_id": "user3",
+  "followed_id": "user2",
+  "created_at": {
+    "$date": "2023-10-18T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f4",
+  "follower_id": "user4",
+  "followed_id": "user3",
+  "created_at": {
+    "$date": "2022-10-12T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f5",
+  "follower_id": "user3",
+  "followed_id": "user4",
+  "created_at": {
+    "$date": "2023-10-18T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f6",
+  "follower_id": "user4",
+  "followed_id": "user5",
+  "created_at": {
+    "$date": "2022-10-12T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f7",
+  "follower_id": "user5",
+  "followed_id": "user4",
+  "created_at": {
+    "$date": "2024-10-28T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f8",
+  "follower_id": "user5",
+  "followed_id": "user2",
+  "created_at": {
+    "$date": "2023-10-18T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f9",
+  "follower_id": "user2",
+  "followed_id": "user5",
+  "created_at": {
+    "$date": "2022-10-12T08:30:00.000Z"
+  }
+},
+{
+  "_id": "f10",
+  "follower_id": "user6",
+  "followed_id": "user2",
+  "created_at": {
+    "$date": "2024-10-28T08:30:00.000Z"
+  }
+}]

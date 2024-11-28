@@ -1,0 +1,10 @@
+[{
+  "_id": "notif1",
+  "user_id": "user1",
+  "type": "like",
+  "message": "John Doe liked your post.",
+  "read": false,
+  "created_at": {
+    "$date": "2024-10-28T09:30:00.000Z"
+  }
+}]

@@ -14,4 +14,9 @@ FICHIER:
 
   1 - Analyse de Voyages :
     Dans cette partie, vous devrez analyser les données d'une agence de voyages.
-  2 - 
+  
+  2 - Social Media Platform :
+    Dans cette 2 eme partie vous aurez la chance d'implementer des fonctionalites existante des platform social media a traves des requete plus des requetes d'analyse.
+  
+  3- Gestion Restaurant
+    Cette partie consiste a analysez les reservations d'un restaurant pour ameliorez la performance de ce derniers.

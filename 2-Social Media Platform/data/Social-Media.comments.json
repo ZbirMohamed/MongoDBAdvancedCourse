@@ -1,0 +1,214 @@
+[{
+  "_id": "com1",
+  "post_id": "post2",
+  "user_id": "user2",
+  "content": "Wow, that looks amazing!",
+  "created_at": {
+    "$date": "2024-09-28T09:05:00.000Z"
+  }
+},
+{
+  "_id": "com2",
+  "post_id": "post2",
+  "user_id": "user1",
+  "content": "Absolutely stunning! The beauty of Fawkes never ceases to amaze me! 🦅✨",
+  "created_at": "2024-10-28T09:06:00.000+00:00"
+},
+{
+  "_id": "com3",
+  "post_id": "post2",
+  "user_id": "user3",
+  "content": "Wow! It’s incredible to see such a magnificent creature. Do you have any other magical creatures in your collection?",
+  "created_at": "2024-10-28T09:07:00.000+00:00"
+},
+{
+  "_id": "com4",
+  "post_id": "post2",
+  "user_id": "user4",
+  "content": "Dumbledore's phoenix is a true symbol of hope and renewal! Love this photo!",
+  "created_at": {
+    "$date": "2024-04-18T09:05:00.000Z"
+  }
+},
+{
+  "_id": "com5",
+  "post_id": "post3",
+  "user_id": "user1",
+  "content": "A great day with my fellow students.",
+  "created_at": {
+    "$date": "2024-04-18T09:05:00.000Z"
+  }
+},
+{
+  "_id": "com6",
+  "post_id": "post3",
+  "user_id": "user5",
+  "content": "Looks like you all had an amazing time! What activities did you do together?",
+  "created_at": "2024-10-28T09:10:00.000+00:00"
+},
+{
+  "_id": "com7",
+  "post_id": "post3",
+  "user_id": "user6",
+  "content": "Cherish these moments! It’s great to see friendships blossoming during your studies.",
+  "created_at": "2024-10-28T09:11:00.000+00:00"
+},
+{
+  "_id": "com8",
+  "post_id": "post3",
+  "user_id": "user2",
+  "content": "A day well spent with friends is a day well lived! What was the highlight of your day?",
+  "created_at": "2024-10-28T09:12:00.000+00:00"
+},
+{
+  "_id": "com9",
+  "post_id": "post4",
+  "user_id": "user3",
+  "content": "...",
+  "created_at": "2024-10-28T09:13:00.000+00:00"
+},
+{
+  "_id": "com10",
+  "post_id": "post4",
+  "user_id": "user1",
+  "content": "Sometimes silence speaks volumes. What’s on your mind?",
+  "created_at": "2024-10-28T09:14:00.000+00:00"
+},
+{
+  "_id": "com11",
+  "post_id": "post4",
+  "user_id": "user2",
+  "content": "A picture is worth a thousand words! I’d love to know the story behind this moment.",
+  "created_at": "2024-10-28T09:15:00.000+00:00"
+},
+{
+  "_id": "com12",
+  "post_id": "post4",
+  "user_id": "user4",
+  "content": "Intriguing post! Can you share more about what you’re feeling?",
+  "created_at": "2024-10-28T09:16:00.000+00:00"
+},
+{
+  "_id": "com13",
+  "post_id": "post5",
+  "user_id": "user5",
+  "content": "Death is awaiting you ALL!!!!",
+  "created_at": "2024-10-28T09:17:00.000+00:00"
+},
+{
+  "_id": "com14",
+  "post_id": "post5",
+  "user_id": "user1",
+  "content": "That’s quite a dramatic statement! Is this a reference to something specific?",
+  "created_at": {
+    "$date": "2024-07-18T09:05:00.000Z"
+  }
+},
+{
+  "_id": "com15",
+  "post_id": "post5",
+  "user_id": "user2",
+  "content": "Yikes! This sounds intense. Are you quoting a book or movie?",
+  "created_at": "2024-10-28T09:19:00.000+00:00"
+},
+{
+  "_id": "com16",
+  "post_id": "post5",
+  "user_id": "user3",
+  "content": "Such a dark vibe! What inspired this post?",
+  "created_at": "2024-10-28T09:20:00.000+00:00"
+},
+{
+  "_id": "com17",
+  "post_id": "post6",
+  "user_id": "user6",
+  "content": "LOOK LOOK IT'S MY FRIEND HARRYY!!!!",
+  "created_at": "2024-10-28T09:21:00.000+00:00"
+},
+{
+  "_id": "com18",
+  "post_id": "post6",
+  "user_id": "user1",
+  "content": "Harry looks awesome! You two always have the best adventures together! 😄",
+  "created_at": "2024-10-28T09:22:00.000+00:00"
+},
+{
+  "_id": "com19",
+  "post_id": "post6",
+  "user_id": "user2",
+  "content": "Such a fun moment! It’s great to see you both enjoying your time together!",
+  "created_at": "2024-10-28T09:23:00.000+00:00"
+},
+{
+  "_id": "com20",
+  "post_id": "post6",
+  "user_id": "user3",
+  "content": "Love this friendship! Do you have any more pictures from your day?",
+  "created_at": "2024-10-28T09:24:00.000+00:00"
+},
+{
+  "_id": "com21",
+  "post_id": "post7",
+  "user_id": "user2",
+  "content": "That's impressive! Can you teach me your secret?",
+  "created_at": {
+    "$date": "2024-09-28T09:05:00.000Z"
+  }
+},
+{
+  "_id": "com22",
+  "post_id": "post7",
+  "user_id": "user3",
+  "content": "Potions class sounds fun! I wish I could attend.",
+  "created_at": {
+    "$date": "2024-07-18T09:05:00.000Z"
+  }
+},
+{
+  "_id": "com23",
+  "post_id": "post8",
+  "user_id": "user5",
+  "content": "You should have recorded it! I bet it was epic!",
+  "created_at": "2024-10-28T11:05:00.000+00:00"
+},
+{
+  "_id": "com24",
+  "post_id": "post8",
+  "user_id": "user6",
+  "content": "Dueling is dangerous, be careful!",
+  "created_at": "2024-10-28T11:06:00.000+00:00"
+},
+{
+  "_id": "com25",
+  "post_id": "post9",
+  "user_id": "user2",
+  "content": "What are you planning, Voldemort? You better not be up to no good.",
+  "created_at": {
+    "$date": "2024-04-18T09:05:00.000Z"
+  }
+},
+{
+  "_id": "com26",
+  "post_id": "post9",
+  "user_id": "user4",
+  "content": "We all know your plans, don't underestimate the power of love.",
+  "created_at": {
+    "$date": "2024-09-28T09:05:00.000Z"
+  }
+},
+{
+  "_id": "com27",
+  "post_id": "post10",
+  "user_id": "user1",
+  "content": "That's wonderful, Dobby! Every elf deserves to be free!",
+  "created_at": "2024-10-28T13:05:00.000+00:00"
+},
+{
+  "_id": "com28",
+  "post_id": "post10",
+  "user_id": "user5",
+  "content": "Keep helping others, it's what makes the world a better place.",
+  "created_at": {
+    "$date": "2024-07-18T09:05:00.000Z"
+  }
+}]

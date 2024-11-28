@@ -1,0 +1,267 @@
+[{
+  "_id": "post2",
+  "user_id": "user2",
+  "content": "Look it's Dumbeldor's phoenix MAGESTIC!!!",
+  "media": [
+    {
+      "type": "image",
+      "url": "path/to/sunset.jpg"
+    }
+  ],
+  "tags": [
+    "fire",
+    "magic",
+    "photography",
+    "mythic"
+  ],
+  "created_at": {
+    "$date": "2024-10-28T09:00:00.000Z"
+  },
+  "comments": [
+    "com1",
+    "com2",
+    "com3",
+    "com4"
+  ],
+  "likes": [
+    "user1",
+    "user4",
+    "user5",
+    "user6"
+  ],
+  "title": "MYTHICAL CREATURE"
+},
+{
+  "_id": "post3",
+  "user_id": "user3",
+  "content": "A great day with my fellow students.",
+  "media": [
+    {
+      "type": "image",
+      "url": "path/to/sunset.jpg"
+    }
+  ],
+  "tags": [
+    "fire",
+    "magic",
+    "photography",
+    "mythic"
+  ],
+  "created_at": {
+    "$date": "2024-10-28T09:00:00.000Z"
+  },
+  "comments": [
+    "com5",
+    "com6",
+    "com7",
+    "com8"
+  ],
+  "likes": [
+    "user1",
+    "user2",
+    "user3",
+    "user4",
+    "user6"
+  ],
+  "title": "Hogwarts picnic"
+},
+{
+  "_id": "post4",
+  "user_id": "user4",
+  "content": "...",
+  "media": [
+    {
+      "type": "image",
+      "url": "path/to/sunset.jpg"
+    }
+  ],
+  "tags": [
+    "fire",
+    "magic",
+    "photography",
+    "mythic"
+  ],
+  "created_at": {
+    "$date": "2024-10-28T09:00:00.000Z"
+  },
+  "comments": [
+    "com9",
+    "com10",
+    "com11",
+    "com12"
+  ],
+  "likes": [
+    "user1",
+    "user2",
+    "user3",
+    "user4"
+  ],
+  "title": "..."
+},
+{
+  "_id": "post5",
+  "user_id": "user5",
+  "content": "Death is awaiting you ALL!!!!",
+  "media": [
+    {
+      "type": "image",
+      "url": "path/to/sunset.jpg"
+    }
+  ],
+  "tags": [
+    "fire",
+    "magic",
+    "photography",
+    "mythic"
+  ],
+  "created_at": {
+    "$date": "2024-10-28T09:00:00.000Z"
+  },
+  "comments": [
+    "com13",
+    "com14",
+    "com15",
+    "com16"
+  ],
+  "likes": [
+    "user5"
+  ],
+  "title": "Death is nearing"
+},
+{
+  "_id": "post6",
+  "user_id": "user6",
+  "content": "LOOK LOOK IT'S MY FRIEND HARRYY!!!!",
+  "media": [
+    {
+      "type": "image",
+      "url": "path/to/sunset.jpg"
+    }
+  ],
+  "tags": [
+    "fire",
+    "magic",
+    "photography",
+    "mythic"
+  ],
+  "created_at": {
+    "$date": "2024-10-28T09:00:00.000Z"
+  },
+  "comments": [
+    "com17",
+    "com18",
+    "com19",
+    "com20"
+  ],
+  "likes": [
+    "user1",
+    "user6"
+  ],
+  "title": "A day with my friend"
+},
+{
+  "_id": "post7",
+  "user_id": "user1",
+  "content": "Just finished a potion class! Can't believe I brewed a perfect Polyjuice Potion!",
+  "media": [],
+  "tags": [
+    "potion",
+    "Hogwarts",
+    "magic"
+  ],
+  "created_at": "2024-10-28T10:00:00.000+00:00",
+  "likes": [
+    "user2",
+    "user4",
+    "user5"
+  ],
+  "comments": [
+    "com21",
+    "com22"
+  ]
+},
+{
+  "_id": "post8",
+  "user_id": "user4",
+  "content": "Just had a thrilling duel in the Great Hall! Can't wait to challenge more opponents.",
+  "media": [],
+  "tags": [
+    "dueling",
+    "Hogwarts",
+    "magic"
+  ],
+  "created_at": "2024-10-28T11:00:00.000+00:00",
+  "likes": [
+    "user1",
+    "user3",
+    "user6"
+  ],
+  "comments": [
+    "com23",
+    "com24"
+  ],
+  "title": "Amazing duel BREATH TAKING"
+},
+{
+  "_id": "post9",
+  "user_id": "user5",
+  "content": "Planning my next move... The Wizarding World will tremble!",
+  "media": [],
+  "tags": [
+    "darkmagic",
+    "plans",
+    "Hogwarts"
+  ],
+  "created_at": "2024-10-28T12:00:00.000+00:00",
+  "likes": [
+    "user1",
+    "user3"
+  ],
+  "comments": [
+    "com25",
+    "com26"
+  ],
+  "title": "Great Plan"
+},
+{
+  "_id": "post10",
+  "user_id": "user6",
+  "content": "I helped a house-elf today! Freedom tastes sweet!",
+  "media": [],
+  "tags": [
+    "houseelf",
+    "freedom",
+    "Hogwarts"
+  ],
+  "created_at": "2024-10-28T13:00:00.000+00:00",
+  "likes": [
+    "user2",
+    "user3",
+    "user4"
+  ],
+  "comments": [
+    "com27",
+    "com28"
+  ],
+  "title": "Elf household"
+},
+{
+  "_id": "post11",
+  "user_id": "user6",
+  "content": "Check out this amazing land!",
+  "media": [
+    {
+      "type": "image",
+      "url": "path/to/sunset.jpg"
+    }
+  ],
+  "tags": [
+    "sunset",
+    "nature",
+    "photography"
+  ],
+  "created_at": {
+    "$date": "2024-10-29T09:00:00.000Z"
+  },
+  "title": "Amazing vue"
+}]
