@@ -20,3 +20,7 @@ FICHIER:
   
   3- Gestion Restaurant
     Cette partie consiste a analysez les reservations d'un restaurant pour ameliorez la performance de ce derniers.
+
+COMMENT AQUERIR LE COUR:
+
+  - git clone 
