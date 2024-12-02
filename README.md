@@ -23,4 +23,4 @@ FICHIER:
 
 COMMENT AQUERIR LE COUR:
 
-  - git clone 
+  - git clone https://github.com/ZbirMohamed/MongoDBAdvancedCourse.git
